@@ -1,0 +1,25 @@
+body{
+    margin: 0px;
+    padding: 20px;
+    background-color: khaki;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.caja{
+    background-color: darkkhaki;
+    padding: 40px;
+    border-radius: 10px;
+}
+@media(max-width: 600px){
+    .contenedor{
+        grid-template-columns: 1fr;
+    }
+}
+@media(min-width: 768px) and (max-width: 1024px){
+    .contenedor{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
